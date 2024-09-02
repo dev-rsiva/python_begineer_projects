@@ -5,7 +5,6 @@ MIN_OPERAND = 3
 MAX_OPERAND = 12
 
 problems = 10
-
  
 def generateProblem():
     num1 = random.randint(MIN_OPERAND, MAX_OPERAND)
@@ -14,12 +13,7 @@ def generateProblem():
 
     print(num1, num2, operator)
     return num1, num2, operator
-
-
-
-
- 
- 
+  
 for problem in range(problems):
     (num1, num2, operator) = generateProblem()
     guess = input("Problem#" + str(problem+1) + ": " + str(num1) + " " + operator + " " + str(num2) + " =")
